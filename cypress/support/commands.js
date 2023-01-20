@@ -39,6 +39,7 @@ Cypress.Commands.add('AddProdutos', (produto, tamanho, cor, quantidade) => {
     cy.get('.input-text').clear().type(quantidade)
     cy.get('.single_add_to_cart_button').click()
     cy.get('.woocommerce-message > .button').click()
+    cy.get('.dropdown-toggle > .mini-cart-items').should('contain', '4')
     cy.get('.checkout-button').click()
 
 })
