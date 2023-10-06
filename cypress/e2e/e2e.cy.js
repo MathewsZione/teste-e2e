@@ -20,7 +20,7 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
     });
 
     it('Deve fazer um pedido na loja Ebac Shop de ponta a ponta', () => {
-        cy.AddProdutos('Ajax Full-Zip Sweatshirt', 'M', 'Red', 4 )
+        cy.AddProdutos('Abominable Hoodie', 'XS', 'Red', 4 )
 
         DetalhesFatura.DetalhesFatura('Matheus', 'Gonçalves', 'Mt Tech LTDA', 'Brasil', 'Rua 52 n° 92', 'São Pedro da Aldeia', 'Rio de Janeiro', '28905000', '22988356532', )
     });
